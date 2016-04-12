@@ -17,6 +17,22 @@ class Obj
     puts @values
   end
 
+  def loops
+
+    i = 1
+
+    for j in i..5 #for statement
+      puts j
+      i = j + 1
+    end
+
+    puts i += 1 until i == 10 #until statement
+
+    (i..15).each { puts i += 1  unless  i >= 15 } #each with unless statement
+
+
+  end
+
   def add(key, hash)
     @obj[key] = hash
   end

@@ -20,6 +20,7 @@ class Main
     obj.iterate_keys
     obj.iterate_hashes
     puts obj.json_to_hash(obj.to_json)
+    obj.loops
   end
 
 end
